@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e2e8f0;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.card-tela {
+    width: 100%;
+    max-width: 900px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-tela h3 {
+    text-align: center;
+
+    color: #1e293b;
+
+    margin-bottom: 25px;
+}
+
+.linha-inputs {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    flex-wrap: wrap;
+}
+
+.linha-inputs input {
+    flex: 1;
+
+    min-width: 200px;
+
+    padding: 12px;
+
+    border: 1px solid #94a3b8;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+.linha-inputs input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+.btn-acao {
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-azul {
+    background: #2563eb;
+}
+
+.btn-azul:hover {
+    background: #1d4ed8;
+}
+
+.btn-verde {
+    background: #16a34a;
+}
+
+.btn-verde:hover {
+    background: #15803d;
+}
+
+.btn-roxo {
+    background: #7c3aed;
+}
+
+.btn-roxo:hover {
+    background: #6d28d9;
+}
+
+.btn-vermelho {
+    background: #dc2626;
+}
+
+.btn-vermelho:hover {
+    background: #b91c1c;
+}
+
+.barra-ferramentas {
+    margin-top: 10px;
+}
+
+.tabela-dados {
+    width: 100%;
+
+    margin-top: 25px;
+
+    border-collapse: collapse;
+}
+
+.tabela-dados,
+.tabela-dados th,
+.tabela-dados td {
+    border: 1px solid #334155;
+}
+
+.tabela-dados th {
+    background: #1e293b;
+
+    color: white;
+
+    padding: 12px;
+}
+
+.tabela-dados td {
+    padding: 10px;
+
+    text-align: center;
+}
+
+.tabela-dados tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.btn-excluir {
+    background: #ef4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+
+    .linha-inputs {
+        flex-direction: column;
+    }
+
+    .linha-inputs input,
+    .btn-acao {
+        width: 100%;
+    }
+
+    .tabela-dados {
+        font-size: 13px;
+    }
+}
